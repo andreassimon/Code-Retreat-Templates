@@ -1,0 +1,5 @@
+#!/bin/sh
+export JAVA_HOME="/opt/jdk1.6"
+cp -R .JavaTemplate JavaProject
+/opt/eclipse/indigo/java/SR1/eclipse -data JavaProject && rm -Rf ./JavaProject
+
