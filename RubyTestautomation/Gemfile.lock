@@ -1,0 +1,60 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.3.2)
+    builder (3.0.0)
+    childprocess (0.3.5)
+      ffi (~> 1.0, >= 1.0.6)
+    cucumber (1.2.1)
+      builder (>= 2.1.2)
+      diff-lcs (>= 1.1.3)
+      gherkin (~> 2.11.0)
+      json (>= 1.4.6)
+    diff-lcs (1.1.3)
+    ffi (1.0.10)
+    gherkin (2.11.2)
+      json (>= 1.4.6)
+    guard (0.8.8)
+      thor (~> 0.14.6)
+    guard-rspec (0.5.2)
+      guard (>= 0.8.4)
+    json (1.7.5)
+    libnotify (0.5.9)
+    libwebsocket (0.1.5)
+      addressable
+    multi_json (1.3.6)
+    page-object (0.7.3)
+      selenium-webdriver (>= 2.25.0)
+      watir-webdriver (>= 0.6.1)
+    rb-inotify (0.8.8)
+      ffi (>= 0.5.0)
+    rspec (2.7.0)
+      rspec-core (~> 2.7.0)
+      rspec-expectations (~> 2.7.0)
+      rspec-mocks (~> 2.7.0)
+    rspec-core (2.7.1)
+    rspec-expectations (2.7.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.7.0)
+    rubyzip (0.9.9)
+    selenium-webdriver (2.25.0)
+      childprocess (>= 0.2.5)
+      libwebsocket (~> 0.1.3)
+      multi_json (~> 1.0)
+      rubyzip
+    thor (0.14.6)
+    watir-webdriver (0.6.1)
+      selenium-webdriver (>= 2.18.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cucumber
+  guard
+  guard-rspec
+  libnotify
+  page-object
+  rb-inotify
+  rspec
+  watir-webdriver
