@@ -1,0 +1,3 @@
+bin/phpunit
+bin/behat
+vendor/
