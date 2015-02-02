@@ -1,8 +1,0 @@
-source :rubygems
-
-
-gem "rspec"
-gem "libnotify"
-gem "rb-inotify"
-gem "guard"
-gem "guard-rspec"
