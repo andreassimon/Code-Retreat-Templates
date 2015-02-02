@@ -1,9 +1,0 @@
-#!/bin/sh
-export JAVA_HOME="/opt/jdk1.6"
-cp -R .RubyTemplate RubyProject
-mine RubyProject \
-  && rm -Rf RubyProject
-
-#cd RubyProject
-#rvm 1.9.2@coderetreat
-#guard
