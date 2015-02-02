@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Jasmine" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/lib/jasmine-2.1.3" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/jasmine-2.1.3" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
