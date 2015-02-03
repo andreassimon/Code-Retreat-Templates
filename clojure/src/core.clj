@@ -1,4 +1,4 @@
-(ns gdcr.core)
+(ns core)
 
 (def cardinal-points
   (remove #{[0 0]} (for [a [-1 0 1], b [-1 0 1]] [a b])))
