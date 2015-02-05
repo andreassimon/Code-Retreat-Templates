@@ -3,3 +3,6 @@ test: setup
 
 setup:
 	composer install
+
+composer:
+	curl -sS https://getcomposer.org/installer | php
