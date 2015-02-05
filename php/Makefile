@@ -1,8 +1,16 @@
-test: setup
-	bin/phpunit tests
+test:
+	docker run --rm --tty --interactive \
+		--volume `pwd`:`pwd` \
+		--workdir `pwd` \
+		ndrssmn/php5 \
+		bin/phpunit tests
 
 setup:
-	composer install
+	docker run --rm \
+		--volume `pwd`:`pwd` \
+		--workdir `pwd` \
+		ndrssmn/php5 \
+		composer install
 
-composer:
-	curl -sS https://getcomposer.org/installer | php
+docker-image:
+	docker build --no-cache --tag ndrssmn/php5:latest .docker
