@@ -2,4 +2,7 @@ test:
 	bin/lein test
 
 docker-test:
-	docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp java:7 bin/lein test
+	docker run --rm --volume "`pwd`":"`pwd`" --workdir "`pwd`" java:7 bin/lein test
+
+docker-test-start:
+	docker start --attach clojure
