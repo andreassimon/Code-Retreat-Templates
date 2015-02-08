@@ -21,6 +21,12 @@ defmodule AssertionTest do
     assert "hello #{:world}" == "hello #{:world}"
     assert "hello
 world" == "hello\nworld"
+    assert "hello world" == "hello " <> "world"
+  end
+
+  test "comparisons" do
+    assert 1 == 1.0
+    refute 1 === 1.0
   end
 
   test "anonymous functions" do
