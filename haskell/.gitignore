@@ -1,0 +1,7 @@
+cabal-dev/
+dist/
+*.hi
+*.o
+
+# Binaries
+primefactors

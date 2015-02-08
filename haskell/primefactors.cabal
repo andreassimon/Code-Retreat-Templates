@@ -1,0 +1,16 @@
+Name:          Coderetreat
+Version:       0.0.1
+Cabal-Version: >= 1.2
+Build-Type:    Simple
+
+Executable primefactors
+  Main-is:     primefactors.hs
+  Build-depends: base
+
+Test-Suite prime-factors
+  Type: detailed-0.9
+  Test-Module:   Test.YourTestModule
+  build-depends: base
+               , HTF
+--               , cabal
+--               , cabal-test-hunit
