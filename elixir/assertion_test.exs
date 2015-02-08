@@ -7,12 +7,6 @@ defmodule AssertionTest do
   #    concurrently with other test cases
   use ExUnit.Case, async: true
 
-  # 4) Use the `test` macro instead of `def` for clarity.
-  test "the truth" do
-    # http://elixir-lang.org/docs/master/ex_unit/ExUnit.Assertions.html
-    assert true
-  end
-
   test "Atoms" do
     assert :hello == :hello
   end
@@ -44,5 +38,15 @@ world" == "hello\nworld"
 
   test "tuples" do
     assert {0, "world"} == put_elem({0, :hello}, 1, "world")
+  end
+end
+
+
+defmodule PatternMatchingTest do
+  use ExUnit.Case, async: true
+
+  test "matching tuples" do
+    {a, b, c} = {:hello, "world", 42}
+    assert a == :hello
   end
 end
