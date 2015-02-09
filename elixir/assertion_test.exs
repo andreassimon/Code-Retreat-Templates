@@ -8,6 +8,7 @@ defmodule AssertionTest do
   use ExUnit.Case, async: true
 
   test "Atoms" do
+    # http://elixir-lang.org/docs/master/ex_unit/ExUnit.Assertions.html
     assert :hello == :hello
   end
 
@@ -105,6 +106,33 @@ defmodule CaseCondAndIfTest do
     ))
 
     assert :that == (if false, do: :this, else: :that)
+  end
+
+end
+
+defmodule BinariesStringsAndCharLists do
+  use ExUnit.Case, async: true
+  test "String vs. Binary" do
+    string = "hełło"
+
+    assert 7 == byte_size(string)
+    assert 5 == String.length(string)
+  end
+
+  test "code points" do
+    assert 97 == ?a
+    assert 322 == ?ł
+
+    assert ["h", "e", "ł", "ł", "o"] == String.codepoints("hełło")
+  end
+
+  test "Binaries" do
+    assert nil != <<0, 1, 2, 3>>
+    assert 4 == byte_size <<0, 1, 2, 3>>
+    assert false == String.valid?(<<239, 191, 191>>)
+    assert <<0, 1, 2, 3>> == <<0, 1>> <> <<2, 3>>
+    assert <<104, 101, 197, 130, 197, 130, 111, 0>> == "hełło" <> <<0>>
+    assert 'hełło' == to_char_list(to_string 'hełło')
   end
 
 end
