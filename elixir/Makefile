@@ -1,3 +1,10 @@
+actors:
+	docker run --rm --tty --interactive \
+		--volume `pwd`:`pwd` \
+		--workdir `pwd` \
+		ndrssmn/elixir \
+		actors.ex
+
 test:
 	docker run --rm --tty --interactive \
 		--volume `pwd`:`pwd` \
