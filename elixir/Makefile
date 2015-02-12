@@ -3,10 +3,10 @@ test:
 		--volume `pwd`:`pwd` \
 		--workdir `pwd` \
 		ndrssmn/elixir \
-		elixir assertion_test.exs
+		assertion_test.exs
 
 iex:
-	docker run --rm --tty --interactive ndrssmn/elixir:latest iex
+	docker run --rm --tty --interactive --entrypoint "iex" ndrssmn/elixir:latest
 
 docker-image:
-	docker build --no-cache --tag ndrssmn/elixir:latest .docker
+	docker build --tag ndrssmn/elixir:latest .docker
