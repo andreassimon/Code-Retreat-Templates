@@ -19,5 +19,8 @@ update:
 		ndrssmn/php5 \
 		composer update
 
+selenium:
+	java -jar selenium-webdriver/default.jar
+
 docker-image:
 	docker build --no-cache --tag ndrssmn/php5:latest .docker

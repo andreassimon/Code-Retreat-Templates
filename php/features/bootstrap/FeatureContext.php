@@ -7,6 +7,12 @@ use Behat\Behat\Context\ClosuredContextInterface,
 use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
 
+//use Behat\Mink\Mink,
+//    Behat\Mink\Session,
+//    Behat\Mink\Driver\Selenium2Driver;
+//
+//use Selenium\Client as SeleniumClient;
+
 //
 // Require 3rd-party libraries here:
 //
@@ -27,7 +33,13 @@ class FeatureContext extends BehatContext
      */
     public function __construct(array $parameters)
     {
-        // Initialize your context here
+//      $this->url = 'http://example.com';
+//
+//      $this->mink = new Mink(array(
+//          'selenium2' => new Session(new Selenium2Driver($browser, null, $url)),
+//      ));
+//
+//      $this->mink->getSession('selenium2')->getPage()->findLink('Chat')->click();
     }
 
 //
