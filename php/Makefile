@@ -12,5 +12,12 @@ setup:
 		ndrssmn/php5 \
 		composer install
 
+update:
+	docker run --rm \
+		--volume `pwd`:`pwd` \
+		--workdir `pwd` \
+		ndrssmn/php5 \
+		composer update
+
 docker-image:
 	docker build --no-cache --tag ndrssmn/php5:latest .docker

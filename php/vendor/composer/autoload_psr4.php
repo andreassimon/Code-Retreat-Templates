@@ -6,4 +6,17 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
+    'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
+    'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
+    'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
+    'Symfony\\Component\\DependencyInjection\\' => array($vendorDir . '/symfony/dependency-injection'),
+    'Symfony\\Component\\CssSelector\\' => array($vendorDir . '/symfony/css-selector'),
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
+    'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
+    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
+    'Behat\\Mink\\Driver\\' => array($vendorDir . '/behat/mink-selenium2-driver/src'),
+    'Behat\\Mink\\' => array($vendorDir . '/behat/mink/src'),
 );

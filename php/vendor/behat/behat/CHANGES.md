@@ -1,3 +1,15 @@
+2.5.5 / 2015-06-01
+==================
+
+  * Fixed the compatibility with Symfony Console 2.7 (thanks @weaverryan)
+  * Removed usage of a deprecated Translator usage (thanks @chillu)
+
+2.5.4 / 2015-01-23
+==================
+
+  * Fixed an infinite loop when reading annotations from trait methods
+  * Removed usage of a deprecated Yaml usage
+
 2.5.3 / 2014-04-26
 ==================
 
