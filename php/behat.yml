@@ -1,9 +1,11 @@
 default:
   extensions:
+    SensioLabs\Behat\PageObjectExtension\Extension: ~
     Behat\MinkExtension\Extension:
       base_url:  'http://en.wikipedia.org/'
-      goutte:    ~
+#      goutte:    ~
       selenium2: ~
+      default_session: selenium2
 
 # No context:
 no_context:

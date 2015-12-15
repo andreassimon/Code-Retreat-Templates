@@ -1,3 +1,5 @@
+http://mink.behat.org/en/latest/
+
 https://packagist.org/packages/behat/mink-selenium2-driver
 https://github.com/minkphp/MinkSelenium2Driver/tree/v1.3.0
 
